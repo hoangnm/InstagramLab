@@ -10,10 +10,19 @@ import UIKit
 
 class PhotoDetailsViewController: UIViewController {
 
+    @IBOutlet weak var fullImageView: UIImageView!
+    
+    var photoUrl:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       
+        
+        let url = NSURL(string: photoUrl)
+        fullImageView.setImageWithURL(url!)
+        
     }
 
     override func didReceiveMemoryWarning() {

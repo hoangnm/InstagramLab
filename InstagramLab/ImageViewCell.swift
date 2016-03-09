@@ -10,6 +10,9 @@ import UIKit
 
 class ImageViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var profileView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
